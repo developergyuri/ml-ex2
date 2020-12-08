@@ -6,7 +6,7 @@ Ez a program a gépi tanulás alapjai labor ex2 feladatának Python3 implementá
 - [numpy](https://pypi.org/project/numpy/ "numpy")
 - [scipy](https://pypi.org/project/scipy/ "scipy")
 
-### Készítéskor használt verzióik:
+### A készítéskor használt verzióik:
 - matplotlib 3.3.3
 - numpy 1.19.4
 - scipy 1.5.4
@@ -30,7 +30,7 @@ This program is an easy implementation of ex2 for Machine Learning Basic Lab, wr
 - [numpy](https://pypi.org/project/numpy/ "numpy")
 - [scipy](https://pypi.org/project/scipy/ "scipy")
 
-### Used package versions of coding:
+### Version of used packages:
 - matplotlib 3.3.3
 - numpy 1.19.4
 - scipy 1.5.4
