@@ -14,6 +14,6 @@ def plotData(X, y):
     #               examples and 'bo' for the negative examples.
     #
 
-    
-    pass # delete this line
+    plt.plot(X[where(y == 0), 0], X[where(y == 0), 1], "bo")
+    plt.plot(X[where(y == 1), 0], X[where(y == 1), 1], "r*")
     # =========================================================================

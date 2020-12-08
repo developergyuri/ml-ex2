@@ -17,7 +17,8 @@ def predict(theta, X):
     #               your learned logistic regression parameters.
     #               You should set p to a vector of 0's and 1's
     #
-    
+
+    p = round(sigmoid(X @ theta))
 
     return p
     # =========================================================================

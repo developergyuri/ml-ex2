@@ -1,6 +1,7 @@
 from numpy import log, zeros, size, sum
 from sigmoid import sigmoid
 
+
 # COSTFUNCTION Compute cost and gradient for logistic regression
 #   COSTFUNCTION(theta, X, y) computes the cost of using theta as the
 #   parameter for logistic regression and the gradient of the cost
@@ -23,7 +24,13 @@ def costFunction(theta, X, y):
     #
     # Note: grad should have the same dimensions as theta
     #
-    
-    
+
+    hyp = sigmoid(X @ theta).T
+
+    J = 1 / m * sum(-y * log(hyp) - (1 - y) * log(1 - hyp))
+
+    for i in range(size(theta, 0)):
+       grad[i] = 1 / m * (hyp - y).T @ X[:, i]
+
     return J, grad
     # =============================================================

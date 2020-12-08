@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from numpy import zeros, size, mean, loadtxt, ones
+from numpy import zeros, size, mean, loadtxt
 import os
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
@@ -78,28 +78,7 @@ def ex2_reg():
     # Compute and display initial cost and gradient for regularized logistic
     # regression
     cost, grad = costFunctionReg(initial_theta, X, y, _lambda)
-    print("Cost at initial theta (zeros): {:0.3f}".format(cost))
-    print("Expected cost (approx): 0.693")
-    print("Gradient at initial theta (zeros) - first five values only:")
-    for g in grad[:5]:
-        print("{:0.4f}".format(g))
-    print("Expected gradients (approx) - first five values only:")
-    print("0.0085\n0.0188\n0.0001\n0.0503\n0.0115")
-
-    input("Program paused. Press enter to continue.")
-
-    # Compute and display cost and gradient
-    # with all-ones theta and lambda = 10
-    test_theta = ones(size(X, 1))
-    cost, grad = costFunctionReg(test_theta, X, y, 10)
-
-    print("Cost at test theta (with lambda = 10): {:0.2f}".format(cost))
-    print("Expected cost (approx): 3.16\n")
-    print("Gradient at test theta - first five values only:")
-    for g in grad[:5]:
-        print("{:0.4f}".format(g))
-    print("Expected gradients (approx) - first five values only:")
-    print("0.3460\n0.1614\n0.1948\n0.2269\n0.0922")
+    print("Cost at initial theta (zeros): {:6f}".format(cost))
 
     input("Program paused. Press enter to continue.")
 
